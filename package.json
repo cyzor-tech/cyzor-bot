@@ -10,7 +10,8 @@
     "dev:web": "npm run dev -w @cyzor/web",
     "dev:api": "npm run start:dev -w @cyzor/api",
     "build": "npm run build -w @cyzor/shared && npm run build -w @cyzor/api && npm run build -w @cyzor/web",
-    "typecheck": "npm run typecheck -w @cyzor/shared && npm run typecheck -w @cyzor/api && npm run typecheck -w @cyzor/web"
+    "typecheck": "npm run typecheck -w @cyzor/shared && npm run typecheck -w @cyzor/api && npm run typecheck -w @cyzor/web",
+    "start": "npm run start:prod -w @cyzor/api"
   },
   "engines": {
     "node": ">=20"
