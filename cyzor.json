@@ -1,0 +1,5 @@
+{
+  "install": "npm install --include=dev --no-audit --no-fund",
+  "build": "npm run build",
+  "start": "npm run start"
+}
