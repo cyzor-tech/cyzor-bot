@@ -1,0 +1,18 @@
+{
+  "name": "cyzor-bot",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:web": "npm run dev -w @cyzor/web",
+    "dev:api": "npm run start:dev -w @cyzor/api",
+    "build": "npm run build -w @cyzor/shared && npm run build -w @cyzor/api && npm run build -w @cyzor/web",
+    "typecheck": "npm run typecheck -w @cyzor/shared && npm run typecheck -w @cyzor/api && npm run typecheck -w @cyzor/web"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
